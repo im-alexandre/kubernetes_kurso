@@ -8,6 +8,12 @@ EOF \
 # verificar o ip_forward
 sysctl net.ipv4.ip_forward
 
+# Configurar o módulo br_netfilter
+echo "br_netfilter" >> /etc/modules-load.d/modules.conf
+modprobe br_netfilter
+# verificar:
+lsmod | grep br_netfilter
+
 # instalar o containerd()
 # Add Docker's official GPG key:
 sudo apt-get update
