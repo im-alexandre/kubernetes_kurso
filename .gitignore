@@ -3,3 +3,6 @@ ubuntu_24.04.iso
 vagrant-kluster/.bashrc
 vagrant-kluster/join-command.sh
 kind-kluster/config
+terraform-code/.env
+kubespray
+.vagrant
